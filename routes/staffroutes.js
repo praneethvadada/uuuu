@@ -9,7 +9,7 @@ router.post('/login', login);
 
 // Example of a protected route
 // router.get('/profile', protect, (req, res) => {
-//     res.json({ message: 'This is a protected route', staff: req.staff });
+//     res.json({ message: 'This is a protected route', staff: ,.staff });
 // });
 
 export default router;

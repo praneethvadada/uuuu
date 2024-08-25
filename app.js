@@ -1,10 +1,11 @@
 import express from 'express';
-import bodyParser from 'body-parser';
+// import bodyParser from 'body-parser';
 import staffRoutes from './routes/staffroutes.js';
 import sequelize from './conf/db.js';
 import dotenv from 'dotenv';
 import cors from 'cors';
-
+import studentroutes from './routes/studentroutes.js';
+// import printRoutes from './conf/routes.js';
 
 dotenv.config();
 
@@ -15,7 +16,12 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/api/staff', staffRoutes);
+app.use('/api',studentroutes);
 
+
+// if (process.env.NODE_ENV === 'development') {
+//     printRoutes(app);
+//   }
 const PORT = process.env.PORT || 3000;
 
 sequelize.sync().then(() => {

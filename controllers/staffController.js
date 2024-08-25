@@ -28,13 +28,13 @@ export const login = async (req, res) => {
         }
 
         const isMatch = await bcrypt.compare(password, staff.password);
-        console.log(isMatch,staff.password,password);
+        // console.log(isMatch,staff.password,password);
         
         if (!isMatch) {
             return res.status(401).json({ message: 'Invalid username or password' });
         }
 
-        const token = jwt.sign({ id: staff.id, position: staff.position }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN });
+        const token = jwt.sign({ id: staff.id, role: staff.position }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN });
 
         res.status(200).json({ message: 'Logged in successfully', token });
     } catch (error) {
