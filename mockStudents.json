@@ -1,0 +1,452 @@
+[
+  {
+    "roll_number": "ROLL0001",
+    "name": "Willis Emmerich",
+    "password": "password123",
+    "college_name": "Stanton - McLaughlin",
+    "batch": "WEB_DEV",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0002",
+    "name": "Gustavo Lang",
+    "password": "password123",
+    "college_name": "Feest, Runolfsson and Beahan",
+    "batch": "WEB_DEV",
+    "branch": "Mechanical",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0003",
+    "name": "Lee Romaguera",
+    "password": "password123",
+    "college_name": "Senger - Harvey",
+    "batch": "WEB_DEV",
+    "branch": "Civil",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0004",
+    "name": "Laurie Corkery",
+    "password": "password123",
+    "college_name": "Beer LLC",
+    "batch": "MOBILE_DEV",
+    "branch": "Information Technology",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0005",
+    "name": "Angie Weimann",
+    "password": "password123",
+    "college_name": "Kiehn Group",
+    "batch": "MOBILE_DEV",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0006",
+    "name": "Conrad Daniel",
+    "password": "password123",
+    "college_name": "Willms - Leannon",
+    "batch": "WEB_DEV",
+    "branch": "Electronics",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0007",
+    "name": "Delia Stiedemann MD",
+    "password": "password123",
+    "college_name": "Jast LLC",
+    "batch": "CODING_MASTERS",
+    "branch": "Information Technology",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0008",
+    "name": "Erika Donnelly II",
+    "password": "password123",
+    "college_name": "Keebler, Padberg and Mertz",
+    "batch": "DATA_SCIENCE",
+    "branch": "Electronics",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0009",
+    "name": "Cora Conn",
+    "password": "password123",
+    "college_name": "Predovic, Stracke and Lowe",
+    "batch": "CODING_MASTERS",
+    "branch": "Civil",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0010",
+    "name": "Rick McKenzie",
+    "password": "password123",
+    "college_name": "Lakin - Feeney",
+    "batch": "MOBILE_DEV",
+    "branch": "Civil",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0011",
+    "name": "Keith Gibson",
+    "password": "password123",
+    "college_name": "Tromp - Kuvalis",
+    "batch": "MOBILE_DEV",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0012",
+    "name": "Margaret Ernser",
+    "password": "password123",
+    "college_name": "Rosenbaum, Dietrich and Jakubowski",
+    "batch": "WEB_DEV",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0013",
+    "name": "Blanche Olson",
+    "password": "password123",
+    "college_name": "Rice, Hand and Williamson",
+    "batch": "DATA_SCIENCE",
+    "branch": "Mechanical",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0014",
+    "name": "Terence Yost",
+    "password": "password123",
+    "college_name": "Frami - Gleason",
+    "batch": "AI_EXPERTS",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0015",
+    "name": "Casey Frami I",
+    "password": "password123",
+    "college_name": "Waters Inc",
+    "batch": "MOBILE_DEV",
+    "branch": "Electronics",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0016",
+    "name": "Dr. Kevin Rowe",
+    "password": "password123",
+    "college_name": "Leffler - Orn",
+    "batch": "MOBILE_DEV",
+    "branch": "Civil",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0017",
+    "name": "Mitchell Lueilwitz",
+    "password": "password123",
+    "college_name": "Terry - Hansen",
+    "batch": "DATA_SCIENCE",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0018",
+    "name": "Geneva Christiansen",
+    "password": "password123",
+    "college_name": "Smitham - Altenwerth",
+    "batch": "DATA_SCIENCE",
+    "branch": "Mechanical",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0019",
+    "name": "Ms. Angie Douglas",
+    "password": "password123",
+    "college_name": "Botsford Group",
+    "batch": "MOBILE_DEV",
+    "branch": "Mechanical",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0020",
+    "name": "Nathan Frami",
+    "password": "password123",
+    "college_name": "Hilll, Runolfsdottir and Beahan",
+    "batch": "CODING_MASTERS",
+    "branch": "Information Technology",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0021",
+    "name": "Lance Harris",
+    "password": "password123",
+    "college_name": "Johns - Kerluke",
+    "batch": "DATA_SCIENCE",
+    "branch": "Mechanical",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0022",
+    "name": "Sylvester Dibbert",
+    "password": "password123",
+    "college_name": "Lebsack and Sons",
+    "batch": "DATA_SCIENCE",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0023",
+    "name": "Charles Paucek DVM",
+    "password": "password123",
+    "college_name": "Vandervort LLC",
+    "batch": "WEB_DEV",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0024",
+    "name": "Spencer Feil",
+    "password": "password123",
+    "college_name": "Wintheiser - Kulas",
+    "batch": "CODING_MASTERS",
+    "branch": "Information Technology",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0025",
+    "name": "Kristina Sipes MD",
+    "password": "password123",
+    "college_name": "Huels and Sons",
+    "batch": "CODING_MASTERS",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0026",
+    "name": "Darren Senger",
+    "password": "password123",
+    "college_name": "Pacocha and Sons",
+    "batch": "CODING_MASTERS",
+    "branch": "Civil",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0027",
+    "name": "Ana Simonis",
+    "password": "password123",
+    "college_name": "Hudson - Skiles",
+    "batch": "MOBILE_DEV",
+    "branch": "Information Technology",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0028",
+    "name": "Lee Heidenreich",
+    "password": "password123",
+    "college_name": "Stehr and Sons",
+    "batch": "WEB_DEV",
+    "branch": "Information Technology",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0029",
+    "name": "Winifred Borer IV",
+    "password": "password123",
+    "college_name": "Grant - Bergstrom",
+    "batch": "AI_EXPERTS",
+    "branch": "Electronics",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0030",
+    "name": "Mrs. Jeremy Bradtke",
+    "password": "password123",
+    "college_name": "Koelpin, Moen and Schowalter",
+    "batch": "MOBILE_DEV",
+    "branch": "Civil",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0031",
+    "name": "Lindsey West",
+    "password": "password123",
+    "college_name": "Boyle - Cummerata",
+    "batch": "CODING_MASTERS",
+    "branch": "Mechanical",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0032",
+    "name": "Victor Rippin",
+    "password": "password123",
+    "college_name": "Bernhard - Willms",
+    "batch": "MOBILE_DEV",
+    "branch": "Electronics",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0033",
+    "name": "Ebony O'Kon",
+    "password": "password123",
+    "college_name": "Glover Inc",
+    "batch": "DATA_SCIENCE",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0034",
+    "name": "Alexander Kessler",
+    "password": "password123",
+    "college_name": "Cole - Schowalter",
+    "batch": "MOBILE_DEV",
+    "branch": "Electronics",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0035",
+    "name": "Norma Jacobson",
+    "password": "password123",
+    "college_name": "Rohan, Russel and Monahan",
+    "batch": "MOBILE_DEV",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0036",
+    "name": "Rosalie Lebsack",
+    "password": "password123",
+    "college_name": "Ankunding, Carroll and Osinski",
+    "batch": "WEB_DEV",
+    "branch": "Civil",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0037",
+    "name": "Philip Ortiz",
+    "password": "password123",
+    "college_name": "Kub and Sons",
+    "batch": "AI_EXPERTS",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0038",
+    "name": "Everett Hintz",
+    "password": "password123",
+    "college_name": "Blick Group",
+    "batch": "MOBILE_DEV",
+    "branch": "Civil",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0039",
+    "name": "Hilda Murray",
+    "password": "password123",
+    "college_name": "Yundt, Schultz and Hansen",
+    "batch": "AI_EXPERTS",
+    "branch": "Mechanical",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0040",
+    "name": "Robert Stark",
+    "password": "password123",
+    "college_name": "Yundt Group",
+    "batch": "MOBILE_DEV",
+    "branch": "Electronics",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0041",
+    "name": "Olive Bogan",
+    "password": "password123",
+    "college_name": "Hoppe - Kulas",
+    "batch": "CODING_MASTERS",
+    "branch": "Civil",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0042",
+    "name": "Rachel Blanda",
+    "password": "password123",
+    "college_name": "Rodriguez LLC",
+    "batch": "DATA_SCIENCE",
+    "branch": "Mechanical",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0043",
+    "name": "Nina Olson",
+    "password": "password123",
+    "college_name": "Leuschke - Grady",
+    "batch": "AI_EXPERTS",
+    "branch": "Information Technology",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0044",
+    "name": "Francisco O'Hara",
+    "password": "password123",
+    "college_name": "Blanda - Raynor",
+    "batch": "CODING_MASTERS",
+    "branch": "Electronics",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0045",
+    "name": "Verna Cartwright",
+    "password": "password123",
+    "college_name": "Wisoky LLC",
+    "batch": "WEB_DEV",
+    "branch": "Information Technology",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0046",
+    "name": "Ms. Lamar Bosco",
+    "password": "password123",
+    "college_name": "Shanahan LLC",
+    "batch": "DATA_SCIENCE",
+    "branch": "Information Technology",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0047",
+    "name": "Grant Goldner",
+    "password": "password123",
+    "college_name": "Breitenberg LLC",
+    "batch": "WEB_DEV",
+    "branch": "Civil",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0048",
+    "name": "Cory Labadie",
+    "password": "password123",
+    "college_name": "Kertzmann Group",
+    "batch": "DATA_SCIENCE",
+    "branch": "Computer Science",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0049",
+    "name": "Hugo Gislason",
+    "password": "password123",
+    "college_name": "Collier, Nolan and Towne",
+    "batch": "WEB_DEV",
+    "branch": "Mechanical",
+    "added_by": 1
+  },
+  {
+    "roll_number": "ROLL0050",
+    "name": "Heidi Schmeler DVM",
+    "password": "password123",
+    "college_name": "Doyle - Harber",
+    "batch": "WEB_DEV",
+    "branch": "Electronics",
+    "added_by": 1
+  }
+]

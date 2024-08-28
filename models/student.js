@@ -1,7 +1,8 @@
 // Import necessary modules
 import { DataTypes } from 'sequelize';
-import sequelize from '../conf/db.js'; // adjust the path as needed
-import Staff from './staff.js';
+import sequelize from '../conf/db.js';
+import Admin from './admin.js';
+import Batch from './batch.js' // Import the Batch model
 
 // Define the Student model
 const Student = sequelize.define('Student', {
@@ -28,6 +29,18 @@ const Student = sequelize.define('Student', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  batch_id: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    references: {
+      model: 'Batch', // Reference the Batch model
+      key: 'id',
+    },
+  },
+  branch: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
   created_on: {
     type: DataTypes.DATE,
     allowNull: false,
@@ -42,17 +55,17 @@ const Student = sequelize.define('Student', {
     type: DataTypes.INTEGER,
     allowNull: false,
     references: {
-      model: 'staff', // Name of the admin table
+      model: 'Admin', 
       key: 'id',
     },
   },
-}, { // Optional: explicitly specify the table name
-  timestamps: false, // Disable automatic creation of 'createdAt' and 'updatedAt' fields
+}, {
+  timestamps: true,
 });
 
-// Export the model
-
 // Define associations
-Student.belongsTo(Staff, { foreignKey: 'added_by', as: 'admin' });
+Student.belongsTo(Admin, { foreignKey: 'added_by', as: 'admin' });
+Student.belongsTo(Batch, { foreignKey: 'batch_id', as: 'batch' }); // Define the association with Batch
 
+// Export the model
 export default Student;

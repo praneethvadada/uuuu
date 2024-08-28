@@ -1,7 +1,9 @@
 import Student from '../models/student.js'; // Adjust the path as needed
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import Staff from '../models/staff.js';
+import Admin from '../models/admin.js';
+import sequelize from '../conf/db.js';
+import Batch from '../models/batch.js';
 // Create a new student
 export const studentLogin = async(req,res ) => {
   try {
@@ -9,7 +11,7 @@ export const studentLogin = async(req,res ) => {
     const student = await Student.findOne( { where: { roll_number } ,
       include: [
         {
-          model: Staff,
+          model: Admin,
           as: 'admin',
           attributes: [
             ['id', 'adminId' ],
@@ -38,29 +40,63 @@ export const studentLogin = async(req,res ) => {
 }
 
 export const addStudent = async (req, res) => {
-  try {
-    const { roll_number, name, password, college_name, added_by } = req.body;
-    const hashedPassword = await bcrypt.hash(password,16);
-    // Create a new student record
-    const newStudent = await Student.create({
-      roll_number,
-      name,
-      password:hashedPassword,
-      college_name,
-      added_by,
-    });
+  const transaction = await sequelize.transaction();
 
+  try {
+    const studentDataArray = req.body; // Assume this is an array of student objects
+
+    // Extract batch names and prepare batch data
+    const batchNames = [...new Set(studentDataArray.map(student => student.batch))];
+    const batchPromises = batchNames.map(batchName =>
+      Batch.findOrCreate({
+        where: { name: batchName },
+        defaults: { name: batchName },
+        transaction
+      })
+    );
+    console.log(batchPromises);
+    
+
+    // Create or retrieve all batches
+    const batchResults = await Promise.all(batchPromises);
+    console.log('......................');
+    console.log(batchResults);
+    
+    const batchMap = batchResults.reduce((map, [batch, created]) => {
+      map[batch.name] = batch.id;
+      return map;
+    }, {});
+
+    // Prepare student records with batch IDs
+    const students = studentDataArray.map(student => ({
+      roll_number: student.roll_number,
+      name: student.name,
+      password: bcrypt.hashSync(student.password, 16),
+      college_name: student.college_name,
+      batch_id: batchMap[student.batch], // Use batch ID from the map
+      branch: student.branch,
+      added_by: student.added_by
+    }));
+
+    // Bulk create students
+    await Student.bulkCreate(students, { transaction });
+
+    // Commit the transaction
+    await transaction.commit();
     res.status(201).json({
-      message: 'Student created successfully',
-      student: newStudent,
+      message: 'Students created successfully!',
     });
   } catch (error) {
+    // Rollback the transaction in case of error
+    await transaction.rollback();
+    console.error('Failed to create students:', error);
     res.status(500).json({
-      message: 'Error creating student',
+      message: 'Error creating students',
       error: error.message,
     });
   }
 };
+
 
 // Get all students
 export const getAllStudents = async (req, res) => {
@@ -68,7 +104,7 @@ export const getAllStudents = async (req, res) => {
     const students = await Student.findAll({
       include: [
         {
-          model: Staff,
+          model: Admin,
           as: 'admin', // Alias for the association
           attributes: [
             ['id', 'adminId'], // Aliasing 'id' to 'adminId'
@@ -92,7 +128,7 @@ export const getStudentById = async (req, res) => {
     const student = await Student.findByPk(req.params.id, {
       include: [
         {
-          model: Staff,
+          model: Admin,
           as: 'admin',
           attributes: [
             ['id', 'adminId' ],

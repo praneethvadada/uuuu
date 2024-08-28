@@ -1,6 +1,6 @@
 import express from 'express';
 // import bodyParser from 'body-parser';
-import staffRoutes from './routes/staffroutes.js';
+import staffRoutes from './routes/adminroutes.js';
 import sequelize from './conf/db.js';
 import dotenv from 'dotenv';
 import cors from 'cors';
