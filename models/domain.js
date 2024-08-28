@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../conf/db.js'; 
 
-const Domain = sequelize.define('Domain', {
+const Domain = sequelize.define('domain', {
   id: {
     type: DataTypes.UUID,
     defaultValue: DataTypes.UUIDV4,

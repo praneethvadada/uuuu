@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../conf/db.js';  // Ensure the path is correct and includes .js
 
-const Admin = sequelize.define('Admin', {
+const Admin = sequelize.define('admin', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -27,7 +27,6 @@ const Admin = sequelize.define('Admin', {
         defaultValue: DataTypes.NOW
     }
 }, {
-    tableName: 'Admin',
     timestamps: true, // Automatically manage `createdAt` and `updatedAt` fields
 });
 

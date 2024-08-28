@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../conf/db.js'; // Adjust the path as needed
 
-const College = sequelize.define('College', {
+const College = sequelize.define('college', {
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,

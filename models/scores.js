@@ -3,7 +3,7 @@ import sequelize from "../conf/db";
 import { DataTypes } from "sequelize";
 import Question from "./question";
 import Student from "./student";
-const Score  = sequelize.define('Score', {
+const Score  = sequelize.define('score', {
 
     id: {
         type: DataTypes.INTEGER,

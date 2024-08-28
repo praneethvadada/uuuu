@@ -5,7 +5,7 @@ import Admin from './admin.js';
 import Batch from './batch.js' // Import the Batch model
 
 // Define the Student model
-const Student = sequelize.define('Student', 
+  const Student = sequelize.define('student', 
   {
   id: {
     type: DataTypes.INTEGER,
@@ -56,7 +56,7 @@ const Student = sequelize.define('Student',
     type: DataTypes.INTEGER,
     allowNull: false,
     references: {
-      model: 'Admin', 
+      model: 'admin', 
       key: 'id',
     },
   },

@@ -1,9 +1,10 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../conf/db.js'; // Adjust the path as needed
 import Admin from './admin.js';
+import Domain from './domain.js';
 // import Domain from './domain.js'; // Import the Domain model if domain_ref is a foreign key
 
-const Question = sequelize.define('Question', {
+const Question = sequelize.define('question', {
   id: {
     type: DataTypes.UUID,
     defaultValue: DataTypes.UUIDV4,
