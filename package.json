@@ -3,18 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-mock-data": "node generateMockData.js"
+    "generate-mock-data": "node generateMockData.js",
+    "migrate": "sequelize-cli db:migrate"
   },
   "author": "lokesh",
   "license": "ISC",
   "dependencies": {
+    "@ariga/atlas-provider-sequelize": "^0.1.4",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
+    "esm": "^3.2.25",
     "express": "^4.19.2",
     "faker": "^5.5.3",
     "jsonwebtoken": "^9.0.2",
@@ -24,6 +27,7 @@
     "sequelize-mig": "^3.1.3"
   },
   "devDependencies": {
+    "babel-register": "^6.26.0",
     "nodemon": "^3.1.4",
     "sequelize-cli": "^6.6.2"
   }

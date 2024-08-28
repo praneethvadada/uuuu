@@ -26,7 +26,7 @@ const Question = sequelize.define('Question', {
     type: DataTypes.INTEGER,
     allowNull: false,
     references: {
-      model: Staff, // 'Staff' would be the name of the Staff model
+      model: Admin, // 'Staff' would be the name of the Staff model
       key: 'id',
     },
   },
@@ -59,7 +59,7 @@ const Question = sequelize.define('Question', {
     allowNull: true,
   },
   tags: {
-    type: DataTypes.ARRAY(DataTypes.STRING),
+    type: DataTypes.JSON,
     allowNull: true,
   },
   added_on: {

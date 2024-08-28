@@ -5,7 +5,8 @@ import Admin from './admin.js';
 import Batch from './batch.js' // Import the Batch model
 
 // Define the Student model
-const Student = sequelize.define('Student', {
+const Student = sequelize.define('Student', 
+  {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -59,9 +60,9 @@ const Student = sequelize.define('Student', {
       key: 'id',
     },
   },
-}, {
-  timestamps: true,
-});
+}
+
+);
 
 // Define associations
 Student.belongsTo(Admin, { foreignKey: 'added_by', as: 'admin' });
