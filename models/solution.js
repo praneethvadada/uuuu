@@ -10,7 +10,7 @@ const Solution = sequelize.define('solution', {
     primaryKey: true,
   },
   question_id: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.UUID,
     references: {
       model: Question, // Name of the question model
       key: 'id',

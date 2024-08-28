@@ -1,6 +1,7 @@
 // import { DataTypes } from 'sequelize';
 const { DataTypes} = require('sequelize');
 import sequelize from '../conf/db.js';
+import College from './college.js';
 
 // Define the Batch model
 const Batch = sequelize.define('batch', {
@@ -15,6 +16,14 @@ const Batch = sequelize.define('batch', {
     allowNull: false,
     unique: true,
   },
+  college_id:{
+    type:DataTypes.INTEGER,
+    references:{
+      model:College,
+      key:'id',
+    },
+    allowNull:false,
+  }
 }, {
   timestamps: true,
 });

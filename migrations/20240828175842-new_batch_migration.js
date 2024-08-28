@@ -15,6 +15,14 @@ module.exports = {
         allowNull: false,
         unique: true, // Ensures that batch names are unique
       },
+      college_id:{
+        type:Sequelize.INTEGER,
+        references:{
+          model:'colleges',
+          key:'id',
+        },
+        allowNull:false,
+      },
       
       createdAt: {
         type: Sequelize.DATE,
