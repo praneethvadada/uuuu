@@ -1,5 +1,5 @@
 import { DataTypes } from 'sequelize';
-import sequelize from '../conf/db.js'; // Adjust the path as needed
+import sequelize from '../config/db.js'; // Adjust the path as needed
 
 const College = sequelize.define('college', {
   id: {

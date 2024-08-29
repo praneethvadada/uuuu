@@ -1,6 +1,6 @@
 // import { DataTypes } from 'sequelize';
 const { DataTypes} = require('sequelize');
-import sequelize from '../conf/db.js';
+import sequelize from '../config/db.js';
 import College from './college.js';
 
 // Define the Batch model

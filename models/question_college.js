@@ -1,4 +1,4 @@
-import sequelize from "../conf/db";
+import sequelize from "../config/db";
 import Question from "./question";
 import Batch from "./batch";
 import { DataTypes } from "sequelize";
@@ -30,3 +30,5 @@ const QuestionCollege = sequelize.define('question_college',{
         allowNull:false,
     }
 });
+
+export default QuestionCollege;

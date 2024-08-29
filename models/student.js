@@ -1,6 +1,6 @@
 // Import necessary modules
 import { DataTypes } from 'sequelize';
-import sequelize from '../conf/db.js';
+import sequelize from '../config/db.js';
 import Admin from './admin.js';
 import Batch from './batch.js' // Import the Batch model
 

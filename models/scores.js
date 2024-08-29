@@ -1,5 +1,5 @@
 import { Sequelize } from "sequelize";
-import sequelize from "../conf/db";
+import sequelize from "../config/db";
 import { DataTypes } from "sequelize";
 import Question from "./question";
 import Student from "./student";

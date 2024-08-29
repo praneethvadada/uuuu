@@ -2,7 +2,7 @@ import Student from '../models/student.js'; // Adjust the path as needed
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import Admin from '../models/admin.js';
-import sequelize from '../conf/db.js';
+import sequelize from '../config/db.js';
 import Batch from '../models/batch.js';
 // Create a new student
 export const studentLogin = async(req,res ) => {

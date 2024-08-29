@@ -1,5 +1,5 @@
 import { DataTypes } from 'sequelize';
-import sequelize from '../conf/db.js';  // Ensure the path is correct and includes .js
+import sequelize from '../config/db.js';  // Ensure the path is correct and includes .js
 
 const Admin = sequelize.define('admin', {
     id: {
