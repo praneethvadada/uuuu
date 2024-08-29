@@ -1,4 +1,4 @@
-import { Domain } from '../models/modelsIndex';
+import { Domain } from '../models/modelsIndex.js';
 
 const DomainController = {
   // Create a new domain

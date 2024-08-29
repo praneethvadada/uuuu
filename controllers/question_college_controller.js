@@ -1,4 +1,4 @@
-import { QuestionCollege } from '../models/modelsIndex'; // Assuming combined model index
+import { QuestionCollege } from '../models/modelsIndex.js'; // Assuming combined model index
 
 const QuestionCollegeController = {
   // Create a new question-college association

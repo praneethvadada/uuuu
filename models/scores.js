@@ -1,8 +1,8 @@
 import { Sequelize } from "sequelize";
-import sequelize from "../config/db";
+import sequelize from "../config/db.js";
 import { DataTypes } from "sequelize";
-import Question from "./question";
-import Student from "./student";
+import Question from "./question.js";
+import Student from "./student.js";
 const Score  = sequelize.define('score', {
 
     id: {
@@ -17,7 +17,7 @@ const Score  = sequelize.define('score', {
         allowNull:false,
         references:{
             model:Question,
-            key:id,
+            key:'id',
         }
     },
 
@@ -26,7 +26,7 @@ const Score  = sequelize.define('score', {
         allowNull:false,
         references:{
             model:Student,
-            key:id,
+            key:'id',
         }
     },
 
