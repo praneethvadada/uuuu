@@ -1,4 +1,5 @@
-import { Question } from '../models/question'; // Assuming combined model index
+import { question} from '../models/modelsIndex.js' 
+// Assuming combined model index
 
 const QuestionController = {
   // Create a new question

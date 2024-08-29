@@ -77,7 +77,7 @@ const Question = sequelize.define('question', {
 });
 
 // Associations
-Question.belongsTo(Staff, {
+Question.belongsTo(Admin, {
   foreignKey: 'added_by',
   as: 'admin',
 });

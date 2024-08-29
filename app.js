@@ -1,7 +1,7 @@
 import express from 'express';
 // import bodyParser from 'body-parser';
 import staffRoutes from './routes/adminroutes.js';
-import sequelize from './conf/db.js';
+import sequelize from './config/db.js';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import studentroutes from './routes/studentroutes.js';

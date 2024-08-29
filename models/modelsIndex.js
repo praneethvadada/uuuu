@@ -1,13 +1,14 @@
-import Admin from "./admin";
-import Batch from "./batch";
-import College from "./college";
-import Domain from "./domain";
-import QuestionCollege from "./question_college";
-import Question from "./question";
-import Score from "./scores";
-import Solution from "./solution";
-import Student from "./student";
-import Trainer from "./trainer";
+import Admin from './admin.js'; // Ensure correct extension
+import Batch from './batch.js';
+import College from './college.js';
+import Domain from './domain.js';
+import QuestionCollege from './question_college.js';
+import Question from './question.js';
+import Score from './scores.js';
+import Solution from './solution.js';
+import Student from './student.js';
+import Trainer from './trainer.js';
+
 
 export {Admin,Batch,College,Domain,Question,QuestionCollege,Score,
     Solution,Student,Trainer

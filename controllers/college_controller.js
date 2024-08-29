@@ -1,4 +1,4 @@
-import { College } from '../models/modelsIndex';
+import { College } from '../models/modelsIndex.js';
 
 const CollegeController = {
   // Create a new college

@@ -1,6 +1,6 @@
-import sequelize from "../config/db";
-import Question from "./question";
-import Batch from "./batch";
+import sequelize from "../config/db.js";
+import Question from "./question.js";
+import Batch from "./batch.js";
 import { DataTypes } from "sequelize";
 
 
@@ -10,6 +10,7 @@ const QuestionCollege = sequelize.define('question_college',{
     id:{
         type:DataTypes.INTEGER,
         autoIncrement:true,
+        primaryKey:true,
     },
 
     question_id: {

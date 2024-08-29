@@ -1,4 +1,4 @@
-import { Batch, College } from '../models/modelsIndex';
+import { Batch, College } from '../models/modelsIndex.js';
 
 const BatchController = {
   // Create a new batch

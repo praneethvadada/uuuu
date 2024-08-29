@@ -1,7 +1,7 @@
 // models/solution.js
 import { DataTypes } from 'sequelize';
-import sequelize from '../config/db'; // Adjust the path according to your project structure
-import Question from './question';
+import sequelize from '../config/db.js'; // Adjust the path according to your project structure
+import Question from './question.js';
 
 const Solution = sequelize.define('solution', {
   id: {

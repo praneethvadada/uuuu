@@ -1,6 +1,6 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import {Admin} from '../models/modelsIndex'
+import {Admin} from '../models/modelsIndex.js'
 
 export const register = async (req, res) => {
     const { username, password } = req.body;
