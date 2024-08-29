@@ -1,9 +1,9 @@
-// 'use strict';
+'use strict';
 
 /** @type {import('sequelize-cli').Migration} */
-export async function up(queryInterface, Sequelize) {
-  await queryInterface.createTable('solutions',
-    {
+module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    await queryInterface.createTable('solutions', {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -27,18 +27,10 @@ export async function up(queryInterface, Sequelize) {
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
       },
-    }
-  );
-}
-export
-  /**
-   * Add altering commands here.
-   *
-   * Example:
-   * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
-   */
-  async function down(queryInterface, Sequelize) {
+    });
+  },
 
-  await queryInterface.dropTable('solutions');
-
-}
+  down: async (queryInterface, Sequelize) => {
+    await queryInterface.dropTable('solutions');
+  }
+};
