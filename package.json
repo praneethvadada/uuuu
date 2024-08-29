@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate-mock-data": "node generateMockData.js",
-    "migrate": "sequelize-cli db:migrate"
+    "migrate": "node --loader ts-node/esm node_modules/.bin/sequelize-cli db:migrate"
   },
   "author": "lokesh",
   "license": "ISC",
