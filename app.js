@@ -13,7 +13,7 @@ import {
     collegeroute,
     batchroute,
     adminroute
-  } from './routes';
+  } from './routes/index.js';
 // import printRoutes from './conf/routes.js';
 
 dotenv.config();

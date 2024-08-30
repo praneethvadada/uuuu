@@ -1,5 +1,5 @@
 import express from 'express';
-import CollegeController from '../controllers/college_controller';
+import CollegeController from '../controllers/college_controller.js';
 const router = express.Router();
 
 // Routes for College management

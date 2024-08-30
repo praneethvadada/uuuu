@@ -1,4 +1,4 @@
-import Score from '../models/scores'; // Assuming you're using a combined model index
+import Score from '../models/scores.js'; // Assuming you're using a combined model index
 
 const ScoreController = {
   // Create a new score

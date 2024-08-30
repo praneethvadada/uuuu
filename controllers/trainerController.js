@@ -1,4 +1,4 @@
-import { Trainer } from '../models/trainer'; // Assuming you're using a combined model index
+import  Trainer from '../models/trainer.js'; // Assuming you're using a combined model index
 import { Op } from 'sequelize';
 
 // Controller for Trainer model

@@ -1,4 +1,4 @@
-import { Solution } from '../models/index'; // Assuming you're using a combined model index
+import  Solution  from '../models/solution.js'; // Assuming you're using a combined model index
 
 const SolutionController = {
   // Create a new solution

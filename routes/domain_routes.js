@@ -1,5 +1,5 @@
 import express from 'express';
-import DomainController from '../controllers/domain_controller';
+import DomainController from '../controllers/domain_controller.js';
 const router = express.Router();
 
 // Routes for Domain management

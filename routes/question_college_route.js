@@ -1,5 +1,5 @@
 import express from 'express';
-import QuestionCollegeController from '../controllers/question_college_controller';
+import QuestionCollegeController from '../controllers/question_college_controller.js';
 const router = express.Router();
 
 // Routes for QuestionCollege management
