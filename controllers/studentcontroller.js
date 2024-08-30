@@ -43,6 +43,7 @@ export const addStudent = async (req, res) => {
   const transaction = await sequelize.transaction();
 
   try {
+    console.log("Started Adding");
     const studentDataArray = req.body; // Assume this is an array of student objects
 
     // Extract batch names and prepare batch data
@@ -87,6 +88,7 @@ export const addStudent = async (req, res) => {
       message: 'Students created successfully!',
     });
   } catch (error) {
+    console.log("Error Adding Student");
     // Rollback the transaction in case of error
     await transaction.rollback();
     console.error('Failed to create students:', error);
