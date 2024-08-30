@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\config",
+    "\\controllers",
+    "\\middleware",
+    "\\migrations",
+    "\\models",
+    "\\routes"
+  ],
+  "SelectedNode": "\\controllers\\trainerController.js",
+  "PreviewInSolutionExplorer": false
+}

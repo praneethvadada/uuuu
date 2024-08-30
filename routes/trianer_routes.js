@@ -4,6 +4,7 @@ import TrainerController from '../controllers/trainerController.js';// Assuming 
 const router = express.Router();
 
 // Routes for Trainer management
+router.post('/login', TrainerController.login);
 router.post('/trainers', TrainerController.create);
 router.get('/trainers', TrainerController.getAll);
 router.get('/trainers/:id', TrainerController.getOne);
